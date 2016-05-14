@@ -1,0 +1,138 @@
+html { 
+  background: url('../images/wallpaper.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+	color: #800000;
+	font-family: 'Caudex', serif;
+	font-size: 3rem;
+	text-align: center;
+	letter-spacing: 4px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+#continue {
+	background-color: #000000;
+	color: #ffcc00;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Caudex', serif;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	border: 2px solid black;
+
+}
+
+.intro {
+	background-color: #ffcc00; 
+	color: #000000;
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid yellow;
+	padding: 40px;
+	display: none;
+	margin-top: 200px;
+	font-family: 'Caudex', serif;
+	text-align: center;
+}
+
+.result {
+
+	background-color: #ffcc00; 
+	color: #000000;
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid #800000;
+	padding: 40px;
+	display: none;
+	margin-top: 200px;
+	font-family: 'Caudex', serif;
+	text-align: center;
+
+
+}
+
+.question1 {
+	display: none;
+}
+
+.question2, .question3, .question4, .question5, .question6, .question7, .question8 {
+	display: none;
+}
+
+.parent{
+    position: relative;
+    margin: 2em;
+    margin-left: 500px;
+
+} 
+
+
+.parent img{
+    position: absolute;
+    margin-top: 165px;
+}
+
+.parent .overlay{
+    position: absolute;
+    top: -1em;
+    text-align: center;    
+    width: 100%;
+  margin-top: 0;
+  margin-left: 200px;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: #ffcc00;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 0px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  z-index: 1;
+}
+
+h5 {
+	font-family: 'Caudex', serif;
+	color: #000000;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+ul li {
+	font-family: 'Caudex', serif;
+	color: #000000;
+	font-size: 18px;
+	text-transform: lowercase;
+	list-style: none;
+	text-align: left;
+}
+.parent .overlay:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 340px;
+  border: 20px solid #ffcc00;
+  border-color: #ffcc00 transparent transparent #ffcc00;
+}
+.parent .overlay:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 340px;
+  border: 4px solid;
+  border-color: #ffcc00 transparent transparent #fff;
+}*/
