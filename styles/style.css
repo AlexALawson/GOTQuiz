@@ -1,5 +1,7 @@
+
+
 html { 
-  background: url('../images/wallpaper.jpg') no-repeat center center fixed; 
+  background: url('../js/images/fivekings.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,14 +11,21 @@ html {
 h1 {
 	color: #800000;
 	font-family: 'Caudex', serif;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-align: center;
 	letter-spacing: 4px;
 	margin-top: 0;
 	margin-bottom: 20px;
 }
 
-#continue {
+#portrait {
+	height: 550px;
+	margin-left: 275px;
+	margin-top: -100px;
+
+}
+
+#continue, #nextBtn, #playAgain {
 	background-color: #000000;
 	color: #ffcc00;
 	width: 100px;
@@ -31,16 +40,16 @@ h1 {
 
 }
 
-.intro {
+.quiz-intro {
 	background-color: #ffcc00; 
 	color: #000000;
 	width: 40%;
 	margin: 0 auto;
 	border: 2px solid yellow;
-	padding: 40px;
-	display: none;
+	padding: 40px
 	margin-top: 200px;
 	font-family: 'Caudex', serif;
+	font-size: 17px;
 	text-align: center;
 }
 
@@ -56,51 +65,17 @@ h1 {
 	margin-top: 200px;
 	font-family: 'Caudex', serif;
 	text-align: center;
-
-
 }
 
-.question1 {
-	display: none;
+.question-box {
+	padding: 20px;
+	position: relative;
+	margin-left: 500px;
+	background: #ffcc00;
+	border: 4px solid #c2e1f5;
+	width: 400px;
 }
 
-.question2, .question3, .question4, .question5, .question6, .question7, .question8 {
-	display: none;
-}
-
-.parent{
-    position: relative;
-    margin: 2em;
-    margin-left: 500px;
-
-} 
-
-
-.parent img{
-    position: absolute;
-    margin-top: 165px;
-}
-
-.parent .overlay{
-    position: absolute;
-    top: -1em;
-    text-align: center;    
-    width: 100%;
-  margin-top: 0;
-  margin-left: 200px;
-  position: relative;
-  width: 400px;
-  height: 300px;
-  padding: 20px;
-  background-color: #ffcc00;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 0px;
-  -webkit-box-shadow: 2px 2px 4px #888;
-  -moz-box-shadow: 2px 2px 4px #888;
-  box-shadow: 2px 2px 4px #888;
-  z-index: 1;
-}
 
 h5 {
 	font-family: 'Caudex', serif;
@@ -111,28 +86,36 @@ h5 {
 ul li {
 	font-family: 'Caudex', serif;
 	color: #000000;
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: lowercase;
 	list-style: none;
 	text-align: left;
 }
-.parent .overlay:before {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 30px;
-  top: 340px;
-  border: 20px solid #ffcc00;
-  border-color: #ffcc00 transparent transparent #ffcc00;
+
+
+
+div {max-width: 100%}
+
+
+
+/*//responsiveness*/
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
 }
-.parent .overlay:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 38px;
-  top: 340px;
-  border: 4px solid;
-  border-color: #ffcc00 transparent transparent #fff;
-}*/
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+img { max-width: 100%; }
+
+html { font-size:100%; } 
+
+@media (min-width: 640px) { body {font-size:.75rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
