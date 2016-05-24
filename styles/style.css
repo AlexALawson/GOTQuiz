@@ -1,11 +1,7 @@
 
 
 html { 
-<<<<<<< HEAD
-  background: url('../js/images/fivekings.jpg') no-repeat center center fixed; 
-=======
   background: url('../images/wallpaper1.jpg') no-repeat center center fixed; 
->>>>>>> master
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,11 +20,6 @@ h1 {
 }
 
 #portrait {
-<<<<<<< HEAD
-	height: 550px;
-	margin-left: 275px;
-	margin-top: -100px;
-=======
 	height: 650px;
 	margin-left: 275px;
 	margin-top: -300px;
@@ -41,7 +32,6 @@ h1 {
 	color: #800020;
 	font-family: 'Fandwood Text';
 	border: 2px solid #800020;
->>>>>>> master
 
 }
 
@@ -61,20 +51,12 @@ h1 {
 }
 
 .quiz-intro {
-<<<<<<< HEAD
-	background-color: #ffcc00; 
-	color: #000000;
-	width: 40%;
-	margin: 0 auto;
-	border: 2px solid yellow;
-=======
 	background-color: #457b87; 
 	color: #000000;
 	width: 40%;
 	padding: 40px;
 	margin: 0 auto;
 	border: 2px solid black;
->>>>>>> master
 	padding: 40px
 	margin-top: 200px;
 	font-family: 'Caudex', serif;
@@ -95,19 +77,6 @@ h1 {
 	font-family: 'Caudex', serif;
 	text-align: center;
 }
-<<<<<<< HEAD
-
-.question-box {
-	padding: 20px;
-	position: relative;
-	margin-left: 500px;
-	background: #ffcc00;
-	border: 4px solid #c2e1f5;
-	width: 400px;
-}
-
-
-=======
 
 .question-box {
 	background-image: url('../images/parchment.png');
@@ -125,7 +94,6 @@ h1 {
 
 
 
->>>>>>> master
 h5 {
 	margin-top: 30px;
 	margin-left: 5px;
@@ -139,13 +107,8 @@ h5 {
 }
 ul li {
 	font-family: 'Caudex', serif;
-<<<<<<< HEAD
-	color: #000000;
-	font-size: 16px;
-=======
 	color: #091515;
 	font-size: 18px;
->>>>>>> master
 	text-transform: lowercase;
 	list-style: none;
 	text-align: left;
@@ -164,7 +127,6 @@ div {max-width: 100%}
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
-<<<<<<< HEAD
 }
 
 /* Tabled Portrait */
@@ -173,16 +135,6 @@ div {max-width: 100%}
     #secondary { width:100%; margin:0; border:none; }
 }
 
-=======
-}
-
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
->>>>>>> master
 img { max-width: 100%; }
 
 html { font-size:100%; } 
