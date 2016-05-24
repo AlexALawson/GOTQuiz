@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a01ae932519c6b74ebdcb8ac1bf34fcf23fe6dc
 //play theme song on load
 
     $("#theme").get(0).play();
@@ -148,4 +152,8 @@ function checkAnswer(){
     
  }
 
+<<<<<<< HEAD
  
+=======
+ 
+>>>>>>> 2a01ae932519c6b74ebdcb8ac1bf34fcf23fe6dc
