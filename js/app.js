@@ -1,15 +1,46 @@
+<<<<<<< HEAD
 
 
     // $("#theme").get(0).play();
     // $("answer-box").hide();
     // $(".quiz-intro").hide();
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a01ae932519c6b74ebdcb8ac1bf34fcf23fe6dc
+//play theme song on load
+
+    $("#theme").get(0).play();
+    $("answer-box").hide();
+    $(".quiz-intro").hide();
+
+
+// click continue //
+
+$(".question-box").hide();
+$("#portrait").hide();
+$(".quiz-intro").show("slow");
+$("#continue").click(function(){
+	$("#portrait").fadeIn("slow");
+	$(".quiz-intro").fadeOut("fast");
+	$(".question-box").fadeIn(getNextQuestion);
+});
+
+
+>>>>>>> master
 
 //quiz questions object//
 
  var score = []
  var quiz = [{
+<<<<<<< HEAD
  		question: "Which of the following was the reason for Ned Stark's beheading?",
  		choices: ['Treason', 'Leaving Westeros', "Turning down the offer to be the King's hand", "Trying to have Joffrey killed"],
+=======
+ 		question: "Why was Ned Stark beheaded?",
+ 		choices: ['Treason', 'Leaving Westeros', "Refusing to be the King's hand", "Trying to have Joffrey killed"],
+>>>>>>> master
  		correctAnswer: 0,
  		image: "images/1.png"
  			
@@ -58,6 +89,7 @@
 }];
 
 
+<<<<<<< HEAD
 // click continue //
 
 $(".question-box").hide();
@@ -68,6 +100,8 @@ $("#continue").click(function(){
 	$(".quiz-intro").hide();
 	$(".question-box").show(getNextQuestion);
 });
+=======
+>>>>>>> master
 
 //Global Variables//
 var questH5 = document.getElementById('questH5');
@@ -98,12 +132,19 @@ function getNextQuestion() {
  	};
 	
 //Move to Next Question
+<<<<<<< HEAD
  	$("#nextBtn").click(function() {
 		// nextQuestion()
 		checkAnswer();
 		nextQuestion();
 		$("input:radio").attr("checked", false);
 
+=======
+ 	$("#nextBtn").on("click", function() {
+		// nextQuestion()
+		checkAnswer();
+	
+>>>>>>> master
 	});
 
 	function nextQuestion() {
@@ -118,12 +159,17 @@ function getNextQuestion() {
 	$(".results").text("Valar Dohaeris! You got " + score.innerHTML + " questions out of " + quiz.length + " total questions correct!"); 	
 	};
 	$("#playAgain").on("click",function(){
+<<<<<<< HEAD
 		$(".quiz-intro").show(function(){
 			i = 0;
 			score = 0;
 		});
 		$(".result").hide();
 			});
+=======
+			location.reload();
+		});
+>>>>>>> master
 	
 };
 
@@ -132,6 +178,7 @@ function checkAnswer(){
 		var value = quiz[i].correctAnswer;
 		console.log(value)
 		var answer = $("input:radio[name='radio']:checked").val();
+<<<<<<< HEAD
     	if (answer == value) {
     	score.innerHTML++;
     	}
@@ -145,3 +192,28 @@ function checkAnswer(){
  }
 
  
+=======
+		if (answer === undefined){
+			alert("Please make a selection")
+    		return false;
+    	}
+    	if (answer == value) {
+    	score.innerHTML++;
+    	nextQuestion();
+		$("input:radio").attr("checked", false);
+		}
+		if(answer != value){
+		nextQuestion();
+		$("input:radio").attr("checked", false);
+
+		}
+    	
+    
+ }
+
+<<<<<<< HEAD
+ 
+=======
+ 
+>>>>>>> 2a01ae932519c6b74ebdcb8ac1bf34fcf23fe6dc
+>>>>>>> master

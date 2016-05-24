@@ -1,15 +1,20 @@
 
 
 html { 
+<<<<<<< HEAD
   background: url('../js/images/fivekings.jpg') no-repeat center center fixed; 
+=======
+  background: url('../images/wallpaper1.jpg') no-repeat center center fixed; 
+>>>>>>> master
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+
 h1 {
-	color: #800000;
+	color: #e5e0c3;
 	font-family: 'Caudex', serif;
 	font-size: 2.5rem;
 	text-align: center;
@@ -19,9 +24,24 @@ h1 {
 }
 
 #portrait {
+<<<<<<< HEAD
 	height: 550px;
 	margin-left: 275px;
 	margin-top: -100px;
+=======
+	height: 650px;
+	margin-left: 275px;
+	margin-top: -300px;
+
+}
+
+#displayCount {
+	font-size: 30px; 
+	padding: 5px;
+	color: #800020;
+	font-family: 'Fandwood Text';
+	border: 2px solid #800020;
+>>>>>>> master
 
 }
 
@@ -31,21 +51,30 @@ h1 {
 	width: 100px;
 	height: 30px;
 	border-radius: 10px;
-	padding: 10px;
 	text-align: center;
 	font-family: 'Caudex', serif;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	border: 2px solid black;
+	margin: 0 auto;
 
 }
 
 .quiz-intro {
+<<<<<<< HEAD
 	background-color: #ffcc00; 
 	color: #000000;
 	width: 40%;
 	margin: 0 auto;
 	border: 2px solid yellow;
+=======
+	background-color: #457b87; 
+	color: #000000;
+	width: 40%;
+	padding: 40px;
+	margin: 0 auto;
+	border: 2px solid black;
+>>>>>>> master
 	padding: 40px
 	margin-top: 200px;
 	font-family: 'Caudex', serif;
@@ -66,6 +95,7 @@ h1 {
 	font-family: 'Caudex', serif;
 	text-align: center;
 }
+<<<<<<< HEAD
 
 .question-box {
 	padding: 20px;
@@ -77,19 +107,49 @@ h1 {
 }
 
 
+=======
+
+.question-box {
+	background-image: url('../images/parchment.png');
+	background-size: 400px 425px;
+	padding: 5px;
+	position: relative;
+	margin-left: 550px;
+	border-radius: 1px;
+	text-align: center;
+	width: 400px;
+	height: 370px;
+
+}
+
+
+
+
+>>>>>>> master
 h5 {
-	font-family: 'Caudex', serif;
-	color: #000000;
-	font-size: 20px;
-	text-transform: uppercase;
+	margin-top: 30px;
+	margin-left: 5px;
+	font-family: 'Cinzel Decorative', cursive;
+	overflow: none;
+	color: #660000;
+	font-size: 19px;
+	white-space: none;
+	max-width: 355px;
+	text-align: center;
 }
 ul li {
 	font-family: 'Caudex', serif;
+<<<<<<< HEAD
 	color: #000000;
 	font-size: 16px;
+=======
+	color: #091515;
+	font-size: 18px;
+>>>>>>> master
 	text-transform: lowercase;
 	list-style: none;
 	text-align: left;
+	padding: 5px;
 }
 
 
@@ -104,6 +164,7 @@ div {max-width: 100%}
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
+<<<<<<< HEAD
 }
 
 /* Tabled Portrait */
@@ -112,6 +173,16 @@ div {max-width: 100%}
     #secondary { width:100%; margin:0; border:none; }
 }
 
+=======
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+>>>>>>> master
 img { max-width: 100%; }
 
 html { font-size:100%; } 
