@@ -1,201 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Game of Thrones Quiz
 	</title>
 		<link rel="stylesheet" href="styles/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Quattrocento:400,700|Fanwood+Text:400,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet' type='text/css'>
+
 <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+
+
 
 </head>
 <body>
 
-<audio controls>
-  <source src="images/theme.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
 
 <h1><a href="http://fontmeme.com/game-of-thrones-font/"><img src="http://fontmeme.com/embed.php?text=PLAY%20THE%20GAME%20OF%20THRONES&name=Game of Thrones.ttf&size=100&style_color=630B12" alt="Game of Thrones Font" height="70px"></a></h1>
 
-<div class="intro">
-<h4>Test Your Knowledge of Game of Thrones</h4>
+<div class="quiz-intro">
+<h4 class="intro-text">Test Your Knowledge of Game of Thrones</h4>
 
 <p>Your mission is to answer as many questions as you can
 correctly. Your score will determine what House you belong in. Are you ready to play the Game of Thrones? </p>
 <button id="continue">Continue</button>
 </div>
 
-<div class="question1">
-<div class="parent">
+<div class="question-box" id="quest">
+<h5 id="questH5"></h5>
+<ul id="answerList"></ul>
+<ul class="answers">
+<form id="myForm">
+	<li><label for="radio1"><input type="radio" class="myClass" name="radio" value="0"><span id="choice1"></span></label></li>
+	<li><label for="radio2"><input type="radio" class="myClass" name="radio" value="1"><span id="choice2"></span></label></li>
+	<li><label for="radio3"><input type="radio" class="myClass" name="radio" value="2"><span id="choice3"></span></label></li>
+	<li><label for="radio4"><input type="radio"  class="myClass" name="radio" value="3"><span id="choice4"></span></label></li>
+	</form>
+				</ul>
 
-<img src="images/ned-stark.png" height="400px">
- <div class="overlay">
+<div id="graphic"></div>	
+<h5><span id="displayCount">0</span> of 8 correct!</h5>
 
-<h5> Which of the following was the reason for Ned Stark's beheading? </h5>
-<ul>
-<li><div class="radio-option"></div>Treason</li>
-<p>
-<li><div class="radio-option"></div>Leaving Westeros</li>
-<p>
-<li><div class="radio-option"></div>Turning down the offer to be the King's Hand</li>
-<p>
-<li><div class="radio-option"></div>Trying to have Joffrey killed</li>
-</ul>
-</div>
-
-</div>
-</div>
-<div class="question2">
-<div class="parent">
-
-<img src="images/joffrey-baratheon.png" height="400px">
- <div class="overlay">
-
-<h5> Who kills Joffrey? </h5>
-<ul>
-<li><div class="radio-option"></div>Sansa Stark</li>
-<p>
-<li><div class="radio-option"></div>Tyrion Lannister</li>
-<p>
-<li><div class="radio-option"></div>Olenna Tyrell</li>
-<p>
-<li><div class="radio-option"></div>The Hound</li>
-</ul>
-</div>
+	<button id="nextBtn" >NEXT</button>
 
 </div>
-</div>
+<img id="portrait" src="#">
 
-<div class="question3">
-<div class="parent">
-
-<img src="images/shae.png" height="400px">
- <div class="overlay">
-
-<h5> What does Shae call Tyrion? </h5>
-<ul>
-<li><div class="radio-option"></div>Imp</li>
-<p>
-<li><div class="radio-option"></div>My Angel</li>
-<p>
-<li><div class="radio-option"></div>My Lion</li>
-<p>
-<li><div class="radio-option"></div>My Moon & Stars</li>
-</ul>
-</div>
-
-</div>
-</div>
-<div class="question4">
-<div class="parent">
-
-<img src="images/khal-drogo.png" height="400px">
- <div class="overlay">
-
-<h5>How does Khal Drogo die? </h5>
-<ul>
-<li><div class="radio-option"></div>Drowning</li>
-<p>
-<li><div class="radio-option"></div>Slain by another Khal</li>
-<p>
-<li><div class="radio-option"></div>Dragons</li>
-<p>
-<li><div class="radio-option"></div>Infected Boo Boo</li>
-</ul>
-</div>
-
-</div>
-</div>
-<div class="question5">
-<div class="parent">
-
-<img src="images/robert-baratheon.png" height="400px">
- <div class="overlay">
-
-<h5>Who was Robert Baratheon in love with?</h5>
-<ul>
-<li><div class="radio-option"></div>Lyanna Stark</li>
-<p>
-<li><div class="radio-option"></div>Margaery Tyrell</li>
-<p>
-<li><div class="radio-option"></div>Cersei Lannister</li>
-<p>
-<li><div class="radio-option"></div>Catelyn Stark</li>
-</ul>
-</div>
-
-</div>
-</div>
-<div class="question6">
-<div class="parent">
-
-<img src="images/sandor-clegane.png" height="400px">
- <div class="overlay">
-
-<h5>Who Was the Hound's Brother?</h5>
-<ul>
-<li><div class="radio-option"></div>Rob Stark</li>
-<p>
-<li><div class="radio-option"></div>The Mountain</li>
-<p>
-<li><div class="radio-option"></div>Robert Baratheon</li>
-<p>
-<li><div class="radio-option"></div>Ned Stark</li>
-</ul>
-</div>
-
-</div>
-</div>
-
-<div class="question7">
-<div class="parent">
-
-<img src="images/robert-baratheon.png" height="400px">
- <div class="overlay">
-
-<h5>Who was Robert Baratheon in love with?</h5>
-<ul>
-<li><div class="radio-option"></div>Lyanna Stark</li>
-<p>
-<li><div class="radio-option"></div>Margaery Tyrell</li>
-<p>
-<li><div class="radio-option"></div>Cersei Lannister</li>
-<p>
-<li><div class="radio-option"></div>Catelyn Stark</li>
-</ul>
-</div>
-
-</div>
-</div>
-<div class="question8">
-<div class="parent">
-
-<img src="images/robb-stark.png" height="400px">
- <div class="overlay">
-
-<h5>What was Rob Stark's direwolf's name?</h5>
-<ul>
-<li><div class="radio-option"></div>Grey Wind</li>
-<p>
-<li><div class="radio-option"></div>Lady</li>
-<p>
-<li><div class="radio-option"></div>Nymeria</li>
-<p>
-<li><div class="radio-option"></div>Ghost</li>
-</ul>
-</div>
-
-</div>
-</div>
 <div class="result">
- <h5>Your Score</h5>
+ <h4>Your Score</h4>
+<h4 class="results"></h4>
+ <p class="score">
 
- <p> Your score is <p class="score">
- <p>This means that you belong in</p>
- <p class="house">
+ <p class="house"></p>
 
- <h5>Thanks for playing the Game of Thrones!</h5> 
+ <h4>Thanks for playing the Game of Thrones!</h4> 
+ <button id="playAgain"> PLAY AGAIN </button>
+</div>
 
+<audio id="theme" src="images/theme.mp3" loop="loop"></audio>
+<script src="js/app.js"></script>
 </body>
 </html>
